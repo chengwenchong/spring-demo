@@ -15,6 +15,7 @@ public class TestController {
 	@Resource
 	private TestService testService;
 	
+	
 	@RequestMapping("/showSuccess")
 	public String toShowSuccess(Model model){
 		model.addAttribute("users", testService.getUsers());
